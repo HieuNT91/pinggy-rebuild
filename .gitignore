@@ -1,0 +1,7 @@
+# Only reviewed templates belong in this repository.
+*
+!.gitignore
+!README.md
+!00-key-only.conf
+!pinggy-tunnel.service
+!ssh_config

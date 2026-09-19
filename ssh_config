@@ -1,0 +1,21 @@
+Host pinggy-relay
+    HostName free.pinggy.io
+    Port 443
+    User tcp
+    IdentityFile /var/lib/pinggy-tunnel/relay_ed25519
+    IdentitiesOnly yes
+    IdentityAgent none
+    BatchMode yes
+    PasswordAuthentication no
+    KbdInteractiveAuthentication no
+    StrictHostKeyChecking yes
+    UserKnownHostsFile /etc/pinggy-tunnel/known_hosts
+    GlobalKnownHostsFile /dev/null
+    ForwardAgent no
+    ForwardX11 no
+    ExitOnForwardFailure yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    ConnectTimeout 20
+    RequestTTY no
+    RemoteForward 0 127.0.0.1:22
