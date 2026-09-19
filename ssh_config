@@ -1,7 +1,7 @@
 Host pinggy-relay
-    HostName free.pinggy.io
+    HostName pro.pinggy.io
     Port 443
-    User tcp
+    User [TOKEN PINGGY RIGHT HERE!!!!]+tcp
     IdentityFile /var/lib/pinggy-tunnel/relay_ed25519
     IdentitiesOnly yes
     IdentityAgent none
